@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>PRÖVIMM VON BOSCH</title>
+	<meta name="description" content="Free Html5 Templates and Free Responsive Themes Designed by Kimmy | zerotheme.com">
+	
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/mainstyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="bootstrap_social/bootstrap-social.css" rel="stylesheet">
+    <link href="bootstrap_social/bootstrap-social.less" rel="stylesheet">
+	<link rel="stylesheet" href="css/design.css">
+
+ 
+<script type="text/javascript">
+ function savedata()
+ {
+
+	 
+	
+    var origin=document.getElementById("origin").value;
+    var destination=document.getElementById("destination").value;
+    var departure=document.getElementById("departure").value;
+    var arrival=document.getElementById("arrival").value;
+    var intermediatedestinations=document.getElementById("intermediatedestinations").value;
+	var returnjouneyarrival =document.getElementById("returnjouneyarrival").value;
+    var returnjouneydeparture=document.getElementById("returnjouneydeparture").value;
+    var persons=document.getElementById("persons").value;
+    //var pattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,3})$/;
+    if(origin=="")
+    {
+alert("Please Enter Origin");
+return false;
+        }
+    if(destination=="")
+    {
+alert("Please Enter Destination");
+return false;
+        }
+    if(departure=="")
+    {
+alert("Please Enter Departure");
+return false;
+        }
+    //if(!(pattern.test(email)==true)){alert("Please enter valid email ");return false;}
+
+    if(arrival=="")
+    {
+alert("Please Enter Arrival");
+return false;
+        }
+    if(ntermediatedestinations=="")
+    {
+alert("Please Enter Intermediate Destinations");
+return false;
+        }
+    if(returnjouneyarrival=="")
+    {
+alert("Please Enter Return Journey Arrival");
+return false;
+        }
+    if(returnjouneydeparture=="")
+    {
+alert("Please Enter Return Jouney Departure");
+return false;
+        }
+    if(persons=="")
+    {
+alert("Please Enter Persons");
+return false;
+        }
+
+
+    
+     var xmlhttp;
+	    if (window.XMLHttpRequest)
+	    {
+	    xmlhttp=new XMLHttpRequest();
+	    }
+	    else
+	    {
+	    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	    }
+	    xmlhttp.onreadystatechange=function()
+	    {
+	    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	    {
+	    var status=xmlhttp.responseText;
+	    alert("successfully inserted");
+	    window.location="index.php";
+	    
+	    }
+
+	    }
+	   
+	    xmlhttp.open("GET","save.php?&name="+name+"&company="+company+"&phone="+phone+"&email="+email+"&note="+note,true);
+	    xmlhttp.send();
+	 
+
+	 }
+    </script>
+    
+</head>
+<body>
+<!--------------Header--------------->
+<header>
+	<div class="wrap-header zerogrid">
+		<!-- <div id="logo"><a href="#"><img src="./images/logo.png"/></a></div> -->
+		<nav>
+			<div class="wrap-nav">
+			<div id="mainline">
+			<p><strong>WIR SIND BOSCH</strong></p>
+			</div>
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">ABOUT</a></li>
+						<li><a href="#">FUTURE JOURNEYS</a></li>
+						<li><a href="#">OUDATED JOURNEYS</a></li>
+						<li><a href="#">ASSISTANCE</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</div>
+				
+				<div class="minimenu"><div>MENU</div>
+					<select onchange="location=this.value">
+						<option></option>
+						<option value="index.html">ABOUT</option>
+						<option value="#">FUTURE JOURNEYS</option>
+						<option value="#">OUDATED JOURNEYS</option>
+						<option value="#">ASSISTANCE</option>
+						<option value="#">CONTACT</option>
+					</select>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+
+<!--------------Content--------------->
+<section id="content">
+	<div class="wrap-content zerogrid">
+		<div class="row block">
+			
+			<div id="main-content" class="col-4-9">
+				<div class="wrap-col">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/1.jpg" alt="Chania">
+    </div>
+
+    <div class="item">
+      <img src="images/2.jpeg" alt="Chania">
+    </div>
+
+    <div class="item">
+      <img src="images/3.jpg" alt="Flower">
+    </div>
+</div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+					
+					<article>
+						<div class="heading">
+						<div id="example1">
+							<h2 style="margin-left:5%;">Request A Journey</h2>
+						 </div>
+						</div>
+						<div class="content" style="margin-left:5%;"> 
+							
+							<div style="margin-top:1%;">
+							<div style="float: left;width: 45%">
+							<input id="origin" type="text" style="margin-top: 4%;" placeholder="Origin"/><br>
+							<input id="destination" type="text" style="margin-top: 4%;" placeholder="Destination"/><br>
+							<input id="departure" type="text" style="margin-top: 4%;" placeholder="Departure"/><br>
+							<input id="arrival" type="text" style="margin-top: 4%;" placeholder="Arrival"/><br>
+							<input id="intermediatedestinations" type="text" style="margin-top: 4%;" placeholder="Intermediate Destinations"/><br>
+							<input id="returnjouneyarrival" type="text" style="margin-top: 4%;" placeholder="Return Jouney Arrival"/><br>
+							<input id="returnjouneydeparture" type="text" style="margin-top: 4%;" placeholder="Return jouney departure"/><br>
+							<input id="persons" type="text" style="margin-top: 4%;" placeholder="Number of Persons"/><br>
+							
+							
+							</div>
+							</div>
+						    </div>
+					</article>
+					<article>
+						</br></br>
+						<div class="content">
+							<div id="button2" style="margin-left:5%;">
+							<center><strong><p>Here is your travel plan<a href="#" id="button1" onclick="savedata()" >Lets Go</a></p></strong></center>
+							</div>
+						</div>
+					</article>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!--------------Footer--------------->
+<footer>
+	<div class="wrap-footer zerogrid">
+		<div class="row">
+			<div class="col-1-4">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>CONTACT US</h2></div>
+						<div class="content">
+							<h1>Address: </h1><p>Robert Bosch GmbH</br> 
+							Hildesheim</br>
+							Germany</p>
+							<h1>Ph:</h1><p>99999999</p>
+							<h1>FAX:</h1><p>999999999</p>
+							<h1>EMAIL:</h1><p>surendra@bosch.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-4">
+				<div class="wrap-col">
+					<div class="box">
+						
+						<div class="content">
+							<img src="images/420x200.jpg"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-4">
+				<div class="wrap-col">
+					<div class="box">
+						
+						<div class="content">
+						<form action="">
+						<p>Would You like give feedback </p>
+							<input type="submit" id="button1" value="Feedback"></form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-4">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>GET IN TOUCH</h2></div>
+						<div class="content">
+							<ul>
+						<li><a href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="http://linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="http://plus.google.com/"><i class="fa fa-google-plus"></i> </a></li></ul>
+                   </br></br>
+                   <h1>NEWSLETTER</h1>
+                   
+                   <input id="rcorners2" type="text" placeholder="Enter your email" /><input type="submit" id="button1">
+    
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</footer>
+
+</body></html>

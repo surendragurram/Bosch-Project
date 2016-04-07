@@ -1,0 +1,8 @@
+#origin {border-radius: 25px; border: 2px solid #8AC007;padding:20px; width: 200px; height: 5px;}
+#destination {border-radius: 25px; border: 2px solid #8AC007;padding:20px; width: 200px;height: 5px;}
+#departure {border-radius: 25px;border: 2px solid #8AC007;padding:20px; width: 200px;height: 5px;}
+#arrival {border-radius: 25px;border: 2px solid #8AC007;padding: 20px; width: 200px;height: 5px;} 
+#intermediatedestinations{border-radius: 25px; border: 2px solid #8AC007;padding:20px; width: 200px; height: 5px;}
+#returnjouneyarrival{border-radius: 25px; border: 2px solid #8AC007;padding:20px; width: 200px;height: 5px;}
+#returnjouneydeparture{border-radius: 25px;border: 2px solid #8AC007;padding:20px; width: 200px;height: 5px;}
+#persons {border-radius: 25px;border: 2px solid #8AC007;padding: 20px; width: 200px;height: 5px;}  
